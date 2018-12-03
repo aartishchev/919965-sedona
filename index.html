@@ -81,8 +81,27 @@
         Укажите предпологаемые даты поездки,<br>
         и мы покажем Вам лучшие предложения в Седоне
       </p>
-      <!-- здесь будет форма -->
-      <div class="main-hotelsearch-mappng">
+      <button class="main-hotelsearch-buttonform" type="button">Поиск гостиницы в Седоне</button>
+      <form class="main-hotelsearch-form" action="http://tosomewhere" method="post">
+        <p class="main-hotelsearch-form-item">
+          <label for="datearrival">Дата заезда:</label>
+          <input id="datearrival" type="date" name="datearrival" value="" placeholder="">
+        </p>
+        <p class="main-hotelsearch-form-item">
+          <label for="datedeparture">Дата выезда:</label>
+          <input id="datedeparture" type="date" name="datedeparture" value="" placeholder="">
+        </p>
+        <p class="main-hotelsearch-form-item">
+          <label for="adultsnumber">Взрослые:</label>
+          <input id="adultsnumber" type="number" name="adultsnumber" value="" placeholder="2">
+        </p>
+        <p class="main-hotelsearch-form-item">
+          <label for="kidsnumber">Дети:</label>
+          <input id="kidsnumber" type="number" name="kidsnumber" value="" placeholder="0">
+        </p>
+        <button class="main-hotelsearch-buttonsearch" type="button">Найти</button>
+      </form>
+      <div class="main-hotelsearch-mappic">
         <img src="img/map.png" width="1200" height="593" alt="Гугл карта с гостиницами">
       </div>
     </section>

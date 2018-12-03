@@ -17,16 +17,81 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="mediainfo.html">Фото и видео</a></li>
         <li><a href="statemap.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a class="header-allsite-navigation-selecteditem">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-hotelspage">
     <h1 class="visually-hidden">Страница подбора гостиниц по заданным параметрам</h1>
-    <!-- здесь будет форма -->
+    <section class="main-filterform-section">
+      <form>
+        <form class="main-filterform" action="http://tosomewhere" method="get">
+          <fieldset>
+            <legend class="main-filterform-legend">Инфраструктура:</legend>
+            <ul>
+              <li>
+                <label for="filterinfrastructurepool">
+                  <input id="filterinfrastructurepool" type="checkbox" name="filterinfrastructurepool" checked>Бассейн
+                </label>
+              </li>
+              <li>
+                <label for="filterinfrastructureparking">
+                  <input id="filterinfrastructureparking" type="checkbox" name="filterinfrastructureparking">Парковка
+                </label>
+              </li>
+              <li>
+                <label for="filterinfrastructurewifi">
+                  <input id="filterinfrastructurewifi" type="checkbox" name="filterinfrastructurewifi">Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="main-filterform-legend">Тип жилья:</legend>
+            <ul>
+              <li>
+                <label for="filterapptypehotel">
+                  <input id="filterapptypehotel" type="checkbox" name="filterapptypehotel" checked>Гостиница
+                </label>
+              </li>
+              <li>
+                <label for="filterinfrastructuremotel">
+                  <input id="filterinfrastructuremotel" type="checkbox" name="filterinfrastructuremotel" checked>Мотель
+                </label>
+              </li>
+              <li>
+                <label for="filterinfrastructureapartments">
+                  <input id="filterinfrastructureapartments" type="checkbox" name="filterinfrastructureapartments"
+                    checked>Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- <fieldset>
+            <legend class="main-filterform-price">Стоимость в сутки (Р):</legend>
+            <p><label>От 0</label>
+              <input type=text></p>
+            <p><label>До 3000</label>
+              <input type=text></p>
+          </fieldset> -->
+          <button class="main-filterform-button" type="submit">
+            Показать
+          </button>
+        </form>
+    </section>
     <section class="main-hotelscatalog">
-      <h2 class="visually-hidden">Список отобранных гостиниц</h2>
+      <h2 class="visually-hidden">Результат по отбору гостиниц</h2>
+      <p>Найдено: 3</p>
+      <fieldset>
+        <legend>Сортировка:</legend>
+        <ul class="main-hotelscatalog-filter">
+          <li><a class="main-hotelscatalog-filter-selected">По цене</a></li>
+          <li><a class="main-hotelscatalog-filter-item" href=#>По типу</a></li>
+          <li><a class="main-hotelscatalog-filter-item" href=#>По рейтингу</a></li>
+        </ul>
+      </fieldset>
+      <hr>
       <ul class="main-hotelscataloglist">
         <li class="main-hotelscataloglist-item">
           <img src="img/hotelspic1.jpg" width="135" height="90" alt="Отель Amara resort & spa">
