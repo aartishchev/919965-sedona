@@ -85,21 +85,27 @@
       <form class="main-hotelsearch-form" action="http://tosomewhere" method="post">
         <p class="main-hotelsearch-form-item">
           <label for="datearrival">Дата заезда:</label>
-          <input id="datearrival" type="date" name="datearrival" value="" placeholder="">
+          <input id="datearrival" type="text" name="datearrival" value="" placeholder="24 апреля 2017">
+          <button class="main-hotelsearch-form-button-calendar" type="button">Календарь</button>
         </p>
         <p class="main-hotelsearch-form-item">
           <label for="datedeparture">Дата выезда:</label>
-          <input id="datedeparture" type="date" name="datedeparture" value="" placeholder="">
+          <input id="datedeparture" type="text" name="datedeparture" value="" placeholder="4 июля 2017">
+          <button class="main-hotelsearch-form-button-calendar" type="button">Календарь</button>
         </p>
         <p class="main-hotelsearch-form-item">
           <label for="adultsnumber">Взрослые:</label>
-          <input id="adultsnumber" type="number" name="adultsnumber" value="" placeholder="2">
+          <button class="main-hotelsearch-form-button-caltndar" type="button">Уменьшение на 1</button>
+          <input id="adultsnumber" type="text" name="adultsnumber" value="" placeholder="2">
+          <button class="main-hotelsearch-form-button-caltndar" type="button">Увеличение на 1</button>
         </p>
         <p class="main-hotelsearch-form-item">
           <label for="kidsnumber">Дети:</label>
-          <input id="kidsnumber" type="number" name="kidsnumber" value="" placeholder="0">
+          <button class="main-hotelsearch-form-button-caltndar" type="button">Уменьшение на 1</button>
+          <input id="kidsnumber" type="text" name="kidsnumber" value="" placeholder="0">
+          <button class="main-hotelsearch-form-button-caltndar" type="button">Увеличение на 1</button>
         </p>
-        <button class="main-hotelsearch-buttonsearch" type="button">Найти</button>
+        <button class="main-hotelsearch-buttonsearch" type="submit">Найти</button>
       </form>
       <div class="main-hotelsearch-mappic">
         <img src="img/map.png" width="1200" height="593" alt="Гугл карта с гостиницами">
