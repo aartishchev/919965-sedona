@@ -8,13 +8,6 @@ body {
 a {
     text-decoration: none;
 }
-.hrstyle {
-    color:  #0000004d; /*для IE */
-    background-color: #0000004d; /*для Firefox, Opera, Safari*/
-    border: none;
-    height: 1px; /* высота IE, Firefox, Opera, Safari */
-    clear: both; /* для очистки, если тег идет после float елемента */
-}
 .header-navigation-ul{
     list-style: none;
 }
@@ -29,7 +22,7 @@ a {
     color: #81b3d2;
 }
 .header-navigation-ul a:active{
-    color: #0000004d;
+    color: rgba(0, 0, 0, 0.302);
 }
 
 
@@ -114,7 +107,7 @@ a {
     background-color: #604e43;
 }
 .main-button:active {
-    color: #ffffff4d;
+    color: rgba(255, 255, 255, 0.302);
     background-color: #503e33;
 }
 .main-hotelsearch-form p {
@@ -175,7 +168,7 @@ a {
     background-color: #669ec0;
 }
 .main-submitbutton:active {
-    color: #ffffff4d;
+    color: rgba(255, 255, 255, 0.302);
     background-color: #5496bd;
 }
 
@@ -209,6 +202,11 @@ a {
     border: none;
     outline: 2px solid #ffffff
 }
+.main-filterform-button:hover,
+.main-filterform-button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
 .main-hotels p {
     font-size: 21px;
     line-height: 26px;
@@ -233,7 +231,7 @@ a {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
-    color: #0000004d;
+    color: rgba(0, 0, 0, 0.302);
     text-align: center;
     text-decoration: underline dotted;
     text-decoration-color: #81b3d2;
@@ -261,6 +259,13 @@ a {
     font-weight: normal;
     color: #333333;
 }
+.main-hotelscatalog-li h3:hover,
+.main-hotelscatalog-li h3:focus {
+    color: #81b3d2;
+}
+.main-hotelscatalog-li h3:active {
+    color: rgba(0, 0, 0, 0.3);
+}
 .main-hoteldescription-button{
     font-size: 14px;
     line-height: 21px;
@@ -285,17 +290,17 @@ a {
 .main-hoteldescription-button:focus {
     background-color: #669ec0;
 }
-.main-hoteldescription-button:focus {
-    color: #ffffff4d;
-    background-color: #5496bd
+.main-hoteldescription-button:active {
+    color: rgba(255, 255, 255, 0.302);
+    background-color: #5496bd;
 }
 .main-hotelreserve-button:hover,
 .main-hotelreserve-button:focus {
-   background-color: #604e43
+   background-color: #604348;
 }
 .main-hotelreserve-button:active {
-    color: #ffffff4d;
-    background-color: #503e33
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
 }
 
 
