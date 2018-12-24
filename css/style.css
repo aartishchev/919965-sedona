@@ -54,18 +54,18 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     color: #000000;
 }
-.header-navigation-ul a:hover, 
-.header-navigation-ul a:focus {
+.header-navigation-ul [href]:hover, 
+.header-navigation-ul [href]:focus {
     color: #81b3d2;
 }
-.header-navigation-ul a:active{
+.header-navigation-ul  [href]:active{
     color: rgba(0, 0, 0, 0.302);
 }
 .header-navigation-li {
     width: 240px;
     text-align: center;
 }
-.header-navigation-li:nth-child(3) {
+  .header-navigation-li:nth-child(3) {
     margin-left: auto;
 }
 .header-navigation-currentpage {
@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     background-image: url("../img/intro-mask.svg");
     left: 0;
-    bottom:-2px;
+    bottom:-1px;
 }
  .main-sedonawelcome-svg {
     width: 459px;
@@ -547,11 +547,11 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.main-hotels-libutton:hover path,
-.main-hotels-libutton:focus path {
+.main-hotels-libutton[href]:hover path,
+.main-hotels-libutton[href]:focus path {
     fill: #000000;
 }
-.main-hotels-libutton:active path{
+.main-hotels-libutton[href]:active path{
     fill: #81b3d2;
 }
 .main-hotelscatalog-ul {
@@ -588,8 +588,7 @@ input[type="radio"].visually-hidden {
 }
 .main-hotelscatalog-li-flexwrapper h3 {
     font-size: 21px;
-   /*  line-height: 26px; */
-    line-height: 16px;
+    line-height: 26px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 12px;
@@ -599,13 +598,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.main-hoteldescription {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: stretch;
-}
-.main-hoteldescription p{
+.main-hoteldescription p {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
@@ -613,7 +606,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 12px;
     color: #333333;
 }
-.main-hoteldescription-button{
+.main-hoteldescription-button {
     display: inline-block;
     font-size: 14px;
     line-height: 21px;
@@ -655,12 +648,14 @@ input[type="radio"].visually-hidden {
    align-items: flex-end;
    margin-left: auto;
 }
+.main-hotelscatalog-lirate-wrapper p {
+    margin: 0;
+}
 .main-hotelscatalog-lirate{
     color: #666666;
     background-color: #f2f2f2;
     font-size: 14px;
     line-height: 21px;
-    margin: 0;
     padding:4px 16px;
 }
 
