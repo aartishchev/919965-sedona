@@ -33,58 +33,63 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="filterinfrastructurepool" checked>Бассейн
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterinfrastructurepool" id="filterinfrastructurepool"
+                  checked>
+                <label for="filterinfrastructurepool">Бассейн</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="filterinfrastructureparking">Парковка
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterinfrastructureparking"
+                  id="filterinfrastructureparking">
+                <label for="filterinfrastructureparking">Парковка</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="filterinfrastructurewifi">Wi-Fi
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterinfrastructurewifi" id="filterinfrastructurewifi">
+                <label for="filterinfrastructurewifi">Wi-Fi </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-filterform-fieldset">
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="main-filterform-ul">
               <li>
-                <label>
-                  <input type="checkbox" name="filterapptypehotel" checked>Гостиница
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterapptypehotel" id="filterapptypehotel"
+                  checked>
+                <label for="filterapptypehotel">Гостиница </label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="filterinfrastructuremotel" checked>Мотель
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterinfrastructuremotel"
+                  id="filterinfrastructuremotel" checked>
+                <label for="filterinfrastructuremotel">Мотель</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="filterinfrastructureapartments" checked>Апартаменты
-                </label>
+                <input class="main-filterform-input visually-hidden" type="checkbox" name="filterinfrastructureapartments"
+                  id="filterinfrastructureapartments" checked>
+                <label for="filterinfrastructureapartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <div class="main-filterform-price">
-            <p>Стоимость в сутки (р):</p>
+            <p>Стоимость в сутки (Р):</p>
             <div class="main-filterform-pricecontrols">
-              <label class="main-filterform-minprice">от
-                <input type="text" name="min-price" value="0">
-              </label>
-              <label class="main-filterform-maxprice">до
-                <input type="text" name="max-price" value="3000">
-              </label>
+              <div class="main-filterform-pricecontrolswrap">
+                <label for="min-price" class="main-filterform-price">от</label>
+                <input id="min-price" type="text" name="min-price" value="0">
+              </div>
+              <div class="main-filterform-pricecontrolswrap">
+                <label for="max-price" class="main-filterform-price">до</label>
+                <input id="max-price" type="text" name="max-price" value="3000">
+              </div>
             </div>
             <div class="main-filterform-rangecontrols">
               <div class="main-filterform-rangecontrols-scale">
                 <div class="main-filterform-rangecontrols-bar"></div>
               </div>
-              <div class="main-filterform-rangetoggle rangetoggle-min"></div>
-              <div class="main-filterform-rangetoggle range-toggle-max"></div>
+              <div class="main-filterform-rangetoggle rangetoggle-min">
+                <span class="visually-hidden"> Декоративный ползунок формы</span>
+              </div>
+              <div class="main-filterform-rangetoggle range-toggle-max">
+                <span class="visually-hidden"> Декоративный ползунок формы</span>
+              </div>
             </div>
             <button class="main-filterform-button" type="submit">
               Показать
@@ -107,14 +112,14 @@
               <a class="main-hotels-libutton" href="#">
                 <span class="visually-hidden">Кнопка промотать вверх</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="rgba(0, 0, 0, 0.3)" d="M5.5 0L0 10h11z" /></svg>
+                  <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
               </a>
             </li>
             <li>
               <a class="main-hotels-libutton">
                 <span class="visually-hidden">Кнопка промотать вниз</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#81b3d2" d="M5.5 10L0 0h11" /></svg>
+                  <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
               </a>
             </li>
           </ul>
@@ -125,7 +130,7 @@
               <img src="img/hotelspic1.jpg" width="135" height="90" alt="Отель Amara resort & spa">
             </div>
             <div class="main-hotelscatalog-li-flexwrapper">
-              <h3><a class="main-hotelscatalog-lianchor" href="#">Amara resort & spa</a></h3>
+              <h3><a class="main-hotelscatalog-lianchor" href="#">Amara Resort & Spa</a></h3>
               <div class="main-hotelscatalog-li-innerflex">
                 <div class="main-hoteldescription">
                   <p>Гостиница</p>
@@ -139,10 +144,10 @@
             </div>
             <div class="main-hotelscatalog-lirate-wrapper">
               <p class="main-hotelscatalog-lirate-starswrapper">
-                <img src="img/star.svg" alt="Четыре звезды">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="Четыре звезды">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
               </p>
               <p class="main-hotelscatalog-lirate">Рейтинг: 8,5</p>
             </div>
@@ -166,9 +171,9 @@
             </div>
             <div class="main-hotelscatalog-lirate-wrapper">
               <p class="main-hotelscatalog-lirate-starswrapper">
-                <img src="img/star.svg" alt="Три звезды">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="Три звезды">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
               </p>
               <p class="main-hotelscatalog-lirate">Рейтинг: 8,9</p>
             </div>
@@ -178,7 +183,7 @@
               <img src="img/hotelspic3.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
             </div>
             <div class="main-hotelscatalog-li-flexwrapper">
-              <h3><a class="main-hotelscatalog-lianchor" href="#">Villas At Poco Diablo</a></h3>
+              <h3><a class="main-hotelscatalog-lianchor" href="#">Villas at Poco Diablo</a></h3>
               <div class="main-hotelscatalog-li-innerflex">
                 <div class="main-hoteldescription">
                   <p>Апартаменты</p>
@@ -192,8 +197,8 @@
             </div>
             <div class="main-hotelscatalog-lirate-wrapper">
               <p class="main-hotelscatalog-lirate-starswrapper">
-                <img src="img/star.svg" alt="Две звезды">
-                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="Две звезды">
+                <img src="img/star.svg" width="18" height="17" alt="">
               </p>
               <p class="main-hotelscatalog-lirate">Рейтинг: 9,2</p>
             </div>
