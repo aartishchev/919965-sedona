@@ -9,7 +9,8 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
     position: relative;
 }
 a {
@@ -29,7 +30,8 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -40,8 +42,11 @@ input[type="radio"].visually-hidden {
 
 .header-navigation-ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -92,7 +97,9 @@ input[type="radio"].visually-hidden {
     height: 71px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -150,8 +157,11 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 50px;
     counter-reset: olcounter;
 }
@@ -170,7 +180,9 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: 50%;
     top: -42px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
@@ -187,8 +199,11 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 .main-reasons-liblue {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     color: #ffffff;
     background-color: #81b3d2;
 }
@@ -210,8 +225,11 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: 82px;
 }
 .main-reasons-ulli h3 {
@@ -227,7 +245,9 @@ input[type="radio"].visually-hidden {
     height: 72px;
     background-image: url(../img/icon-1.svg);
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 60px;
 }
 .food-ulli h3::before{
@@ -237,7 +257,9 @@ input[type="radio"].visually-hidden {
     height: 70px;
     background-image: url(../img/icon-3.svg);
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 60px;
 }
 .souvenirs-ulli h3::before{
@@ -247,7 +269,9 @@ input[type="radio"].visually-hidden {
     height: 76px;
     background-image: url(../img/icon-2.svg);
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 56px;
 }
 .main-reasons-ulli p {
@@ -301,11 +325,14 @@ input[type="radio"].visually-hidden {
 .main-hotelsearch-form {
     width: 458px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     position: absolute;
     background-color: #ffffff;
     padding: 55px 55px;
-    box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
+    -webkit-box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
+            box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 .main-hotelsearch-form button {
     border: none;
@@ -315,10 +342,17 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: bold;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 29px;
 }
 .main-hotelsearch-form-wrapper:nth-child(2) {
@@ -356,17 +390,31 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: bold;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 54px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .main-hotelsearch-form-innerquantitywrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 226px;
     position: relative;
 }
@@ -504,8 +552,11 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/filterbackground.png");
     background-repeat: no-repeat;
     background-position: center 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 72px;
     padding-top: 27px;
     padding-right: 72px;
@@ -546,7 +597,9 @@ input[type="radio"].visually-hidden {
     height: 23px;
     left: 1px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     background-image: url("../img/checkbox-off.svg");
 }
 .main-filterform-input:checked + label::before {
@@ -576,8 +629,11 @@ input[type="radio"].visually-hidden {
     padding-left: 2px;
 }
 .main-filterform-pricecontrols {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 314px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -618,7 +674,9 @@ input[type="radio"].visually-hidden {
     background: #ffffff;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .main-filterform-rangecontrols {
     position: relative;
@@ -639,10 +697,14 @@ input[type="radio"].visually-hidden {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
     position: absolute;
     top: -9px;
+}
+.main-filterform-rangetoggle:hover {
+    border: 9px solid #ffffff;
 }
 .rangetoggle-min {
     left: 0;
@@ -669,8 +731,12 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 } 
 .main-hotels-flexwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     padding-left: 72px;
     padding-top: 25px;
     padding-right: 73px;
@@ -693,12 +759,16 @@ input[type="radio"].visually-hidden {
 }
 .main-hotels-ul {
     list-style: none;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     margin: 0;
     padding: 0;
     list-style: none;
     width:240px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-hotels-li-selected {
     font-size: 12px;
@@ -713,8 +783,10 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     color: rgba(0, 0, 0, 0.302);
     text-align: center;
-    text-decoration: underline dotted;
-    text-decoration-color: #81b3d2;
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+    -webkit-text-decoration-color: #81b3d2;
+            text-decoration-color: #81b3d2;
 }
 .main-hotels-li:hover,
 .main-hotels-li:focus {
@@ -730,9 +802,14 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-hotels-ulbuttons path {
     fill: #81b3d2;
@@ -753,8 +830,11 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 .main-hotelscatalog-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 72px;
     padding-right: 72px;
     padding-bottom: 29px;
@@ -791,9 +871,14 @@ input[type="radio"].visually-hidden {
     padding-bottom: 8px;
 }
 .main-hotelscatalog-li-innerflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-hoteldescription p {
     font-size: 14px;
@@ -833,18 +918,28 @@ input[type="radio"].visually-hidden {
 }
 .main-hotelreserve-button:hover,
 .main-hotelreserve-button:focus {
-   background-color: #604348;
+   background-color: #604e43;
 }
 .main-hotelreserve-button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
 .main-hotelscatalog-lirate-wrapper {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: flex-end;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: end;
+       -ms-flex-align: end;
+           align-items: flex-end;
    margin-left: auto;
 }
 .main-hotelscatalog-lirate-starswrapper {
@@ -871,11 +966,18 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 36px 0;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .footer-indexpage {
     width: 1200px;
@@ -892,9 +994,14 @@ input[type="radio"].visually-hidden {
 .footer-social-ul {
     width: 150px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     padding: 0;
 }
@@ -902,9 +1009,15 @@ input[type="radio"].visually-hidden {
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .footer-social-libutton svg {
    padding-top: 6px;
