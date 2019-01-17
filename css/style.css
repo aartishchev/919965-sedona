@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0 47px;
 }
 .main-reasons-liblue {
     display: -webkit-box;
@@ -283,6 +283,7 @@ input[type="radio"].visually-hidden {
 }
 .main-hotelsearch {
     position: relative;
+    text-align: center;
 }
 .main-hotelsearch-b{
     font-size: 30px;
@@ -312,7 +313,6 @@ input[type="radio"].visually-hidden {
     border: none;
     padding: 30px 140px;
     text-transform: uppercase;
-    margin: 0 315px;
 }
 .main-button:hover,
 .main-button:focus {
@@ -323,17 +323,46 @@ input[type="radio"].visually-hidden {
     background-color: #503e33;
 }
 .main-hotelsearch-form {
-    width: 458px;
+    width: 458px; 
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     position: absolute;
+    z-index: 3;
     background-color: #ffffff;
     padding: 55px 55px;
     -webkit-box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
             box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
+.show-modalwindow {
+    display: block;
+    -webkit-animation: openinganimation 0.6s;
+            animation: openinganimation 0.6s;
+}
+.close-modalwindow {
+    display: none;
+}
+@-webkit-keyframes openinganimation {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scaleY(0);
+              transform: translate(-50%, -50%) scaleY(0);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0) scaleY(1);
+              transform: translate(-50%, 0) scaleY(1);
+    }
+  }
+@keyframes openinganimation {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scaleY(0);
+              transform: translate(-50%, -50%) scaleY(0);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0) scaleY(1);
+              transform: translate(-50%, 0) scaleY(1);
+    }
+  }
 .main-hotelsearch-form button {
     border: none;
 }
@@ -359,22 +388,23 @@ input[type="radio"].visually-hidden {
     padding-bottom: 30px;
 }
 .main-hotelsearch-form-dateinput {
-    width: 333px;
+    width: 346px;
     background-color:#f2f2f2;
     border: none;
     font: inherit;
     text-transform: uppercase;
-    padding-top: 6px;
-    padding-bottom: 6px;
     padding-left: 13px;
+    height: 38px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .main-hotelsearch-form-buttonwrapper {
     position: relative;
 }
 .main-hotelsearch-form-button-calendar {
     position: absolute;
-    top: 7px;
-    right: 3px;
+    top: 8px;
+    right: 9px;
     background-color: #f2f2f2;
     opacity: 0.3;
 }
@@ -422,22 +452,23 @@ input[type="radio"].visually-hidden {
     width: 179px;
 }    
 .main-hotelsearch-form-quantityinput {
-    width: 114px;
+    width: 38px;
     background-color:#f2f2f2;
     border: none;
     font: inherit;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    height: 38px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .button-minus {
-    position: absolute;
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
     right: 76px;
     padding: 0px;
+    margin-left: auto;
 }
 .button-minus::before {
     content: "";
@@ -445,11 +476,10 @@ input[type="radio"].visually-hidden {
     width: 11px;
     height: 3px;
     background-color: #a9a9a9;
-    left: 13px;
+    right: 90px;
     top: 18px;
 }
 .button-plus {
-    position: absolute;
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
@@ -462,7 +492,7 @@ input[type="radio"].visually-hidden {
     width: 11px;
     height: 3px;
     background-color: #a9a9a9;
-    left: 13px;
+    right: 14px;
     top: 18px;
 }
 .button-plus::after {
@@ -471,7 +501,7 @@ input[type="radio"].visually-hidden {
     width: 3px;
     height: 11px;
     background-color: #a9a9a9;
-    left: 17px;
+    right: 18px;
     top: 14px;
 }
 .button-plus:hover::before,
@@ -491,21 +521,29 @@ input[type="radio"].visually-hidden {
 .button-plus:hover {
     background-color: #ebebeb;
 }
-.main-hotelsearch-form input:hover {
+.main-hotelsearch-form-dateinput:hover,
+.main-hotelsearch-form-quantityinput:hover {
     background-color: #ebebeb;
 }
-.main-hotelsearch-form input:focus{
+.main-hotelsearch-form-quantityinput:focus{
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+}
+.main-hotelsearch-form-dateinput:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding-left: 11px;
 }
 .main-hotelsearch-form input::-webkit-input-placeholder {
     color: #000000;
 }
 .main-hotelsearch-form input::-moz-placeholder {
     color: #000000;
+    opacity: 1;
 }
 .main-hotelsearch-form input:-ms-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 .main-hotelsearch-form input:-moz-placeholder {
     color: #000000;
@@ -532,9 +570,23 @@ input[type="radio"].visually-hidden {
     color: rgba(255, 255, 255, 0.302);
     background-color: #5496bd;
 }
-.main-hotelsearch-mappic img {
-    display: block;
+.main-hotelsearch-mappic {
+    position: relative; 
+    height: 593px;
 }
+.main-hotelsearch-mappic p {
+    height: 593px;
+    margin:0;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+.main-hotelsearch-mappic iframe {
+    border: none;
+    position: relative;
+    z-index: 1; 
+} 
    
     
 /* main hotels.html */
@@ -703,14 +755,21 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -9px;
 }
-.main-filterform-rangetoggle:hover {
+.rangetoggle-min:hover {
     border: 9px solid #ffffff;
+    left: -1px;
+    top: -10px;
+}
+.rangetoggle-max:hover {
+    border: 9px solid #ffffff;
+    right: 44px;;
+    top: -10px;
 }
 .rangetoggle-min {
     left: 0;
 }
-.range-toggle-max {
-    right: 14%;
+.rangetoggle-max {
+    right: 45px;;
 }
 .main-filterform-button {
     display: block;
@@ -783,8 +842,10 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     color: rgba(0, 0, 0, 0.302);
     text-align: center;
-    -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
     -webkit-text-decoration-color: #81b3d2;
             text-decoration-color: #81b3d2;
 }
@@ -887,6 +948,7 @@ input[type="radio"].visually-hidden {
     margin: 0px;
     margin-bottom: 15px;
     color: #333333;
+    max-width: 145px;
 }
 .main-hoteldescription-button {
     display: inline-block;
@@ -983,7 +1045,8 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     opacity:0.9;
     position: absolute;
-    bottom:0;
+    z-index: 2;
+    bottom: 0;
     background-color: #ffffff;
 }
 .footer-p {
